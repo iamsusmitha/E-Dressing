@@ -10,7 +10,7 @@ import dlib
 from imutils import face_utils, rotate_bound
 import math
 
-ACTIVE_IMAGES=[0 for i in range(10)]
+ACTIVE_IMAGES=[0 for i in range(100)]
 def put_sprite(num, k):
     global SPRITES, BTNS
     SPRITES[num] = (1 - SPRITES[num]) 
