@@ -15,7 +15,7 @@ def checkOut():
 @app.route('/tryon/<file_path>',methods = ['POST', 'GET'])
 def tryon(file_path):
 	file_path = file_path.replace(',','/')
-	os.system('python main.py ' + file_path)
+	os.system('python tryOn.py ' + file_path)
 	return redirect('http://127.0.0.1:5000/',code=302, Response=None)
 
 @app.route('/tryall',methods = ['POST', 'GET'])
